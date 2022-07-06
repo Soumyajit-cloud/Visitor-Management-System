@@ -1,0 +1,82 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://JAVA.sun.com/xml/ns/javaee"
+    xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+    http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+    id="WebApp_ID" version="3.0">
+<display-name>Visitor Management System</display-name>
+<welcome-file-list>
+	<welcome-file>land.jsp</welcome-file>
+</welcome-file-list>
+
+<servlet>
+	<servlet-name>UserLogin</servlet-name>
+	<servlet-class>com.mvc.visitor.UserLogin</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>AdminLogin</servlet-name>
+	<servlet-class>com.mvc.visitor.AdminLogin</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>registerAdminPreRegister</servlet-name>
+	<servlet-class>com.mvc.visitor.registerAdminPreRegister</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>registerAdminVisitor</servlet-name>
+	<servlet-class>com.mvc.visitor.registerAdminVisitor</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>registerEmployee</servlet-name>
+	<servlet-class>com.mvc.visitor.registerEmployee</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>registerUserPreRegister</servlet-name>
+	<servlet-class>com.mvc.visitor.registerUserPreRegister</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>registerUserVisitor</servlet-name>
+	<servlet-class>com.mvc.visitor.registerUserVisitor</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>UserLogin</servlet-name>
+	<url-pattern>/UserLogin</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>AdminLogin</servlet-name>
+	<url-pattern>/AdminLogin</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>registerAdminPreRegister</servlet-name>
+	<url-pattern>/registerAdminPreRegister</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>registerAdminVisitor</servlet-name>
+	<url-pattern>/registerAdminVisitor</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>registerEmployee</servlet-name>
+	<url-pattern>/registerEmployee</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>registerUserPreRegister</servlet-name>
+	<url-pattern>/registerUserPreRegister</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>registerUserVisitor</servlet-name>
+	<url-pattern>/registerUserVisitor</url-pattern>
+</servlet-mapping>
+
+</web-app>
